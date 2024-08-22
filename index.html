@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B10A-3</title>
     <link rel="stylesheet" href="style.css" />
-    <!--* FontAwesome -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="/all.min.css" />
-    <!--* Manrope font -->
+    <!-- Manrope font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <!--* Tailwind Cdn -->
+    <!-- Tailwind Cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!--* Tailwidn config -->
+    <!-- Tailwidn config -->
     <script>
       tailwind.config = {
         theme: {
@@ -39,7 +39,7 @@
     </script>
   </head>
   <body>
-    <!--* Navbar -->
+    <!-- Navbar -->
     <div class="container">
       <div
         class="md:py-[40px] py-8 flex items-center justify-between px-4 xl:px-0"
@@ -122,7 +122,7 @@
         </div>
       </div>
     </div>
-    <!--* Hero -->
+    <!-- Hero -->
     <div class="md:pb-[100px] pb-[40px] px-4 xl:px-0">
       <div class="container">
         <div class="flex items-center justify-center flex-col text-center">
@@ -153,6 +153,108 @@
               <i class="fa-solid fa-arrow-right-long"></i>
             </div>
           </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="bg-bgColor py-8 md:py-[100px] relative">
+      <!-- vector -->
+      <div class="absolute top-[30px] left-[10px] md:block hidden">
+        <img src="/assets/about-vector.png" alt="" />
+      </div>
+      <div class="container">
+        <div
+          class="px-4 xl:px-0 flex md:flex-row flex-col justify-between lg:gap-x-6 xl:gap-x-0 lg:items-center"
+        >
+          <!--* left -->
+          <div>
+            <div
+              class="flex flex-col items-center md:items-start md:justify-start justify-center text-center md:text-start"
+            >
+              <div class="inline-block">
+                <div
+                  class="font-Manrope font-bold text-base text-black1 bg-white rounded-3xl py-2 px-4 flex items-center gap-x-2 mb-4"
+                >
+                  <i class="fa-solid fa-arrow-right-long text-lg"></i>
+                  About Us
+                </div>
+              </div>
+              <!-- title -->
+              <h3
+                class="font-Manrope font-black text-black2 text-2xl md:text-[40px] md:pb-6 pb-4 max-w-[550px] md:leading-[50px] leading-[34px]"
+              >
+                We design thoughtful, liveable spaces
+              </h3>
+              <!-- Paragraph -->
+              <p
+                class="font-medium text-base text-black1 font-Manrope max-w-[550px]"
+              >
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+            </div>
+
+            <!-- service -->
+            <div class="pt-6 flex flex-col gap-y-6">
+              <!-- comercial -->
+              <div
+                class="flex items-center gap-x-6 py-5 md:py-6 pl-5 md:pl-6 bg-white rounded-2xl shadow"
+              >
+                <div>
+                  <img src="/assets/commercial.png" alt="" />
+                </div>
+                <div>
+                  <h5
+                    class="font-Manrope font-extrabold text-black1 text-base md:text-xl pb-[10px]"
+                  >
+                    Commercial
+                  </h5>
+                  <p
+                    class="font-Manrope font-medium text-base text-black1 max-w-[320px]"
+                  >
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+              <!-- residential -->
+              <div
+                class="flex items-center gap-x-6 py-5 md:py-6 pl-5 md:pl-6 bg-white rounded-2xl shadow"
+              >
+                <div>
+                  <img src="/assets/residential.png" alt="residential" />
+                </div>
+                <div>
+                  <h5
+                    class="font-Manrope font-extrabold text-black1 text-base md:text-xl pb-[10px]"
+                  >
+                    Residential
+                  </h5>
+                  <p
+                    class="font-Manrope font-medium text-base text-black1 max-w-[320px]"
+                  >
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--* right -->
+          <div
+            class="block md:hidden mt-6 md:mt-0 w-full max-h-[223px] overflow-hidden rounded-2xl"
+          >
+            <img
+              src="/assets/about-img.png"
+              alt="about-img"
+              class="w-full h-full"
+            />
+          </div>
+          <div class="hidden md:block lg:h-[580px] xl:h-auto">
+            <img src="/assets/about-img.png" alt="about-img" class="h-full" />
+          </div>
         </div>
       </div>
     </div>

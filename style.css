@@ -2,10 +2,30 @@
 
 :root {
   --Manrope: "Manrope", sans-serif;
-  --bgColor: #abef5f;
+  --bgColor: #f4f4f4;
   --black1: #494949;
   --black2: #212121;
   --tiyaGreen: #abef5f;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--tiyaGreen);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7fad49;
 }
 
 * {
