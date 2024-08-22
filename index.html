@@ -4,24 +4,121 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B10A-3</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="/all.min.css" />
+    <!-- Manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Tailwind Cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Tailwind Config -->
+    <!-- Tailwidn config -->
     <script>
       tailwind.config = {
         theme: {
+          fontFamily: {
+            Manrope: "var(--Manrope)",
+          },
           container: {
             center: true,
           },
-          extend: {},
+          extend: {
+            colors: {
+              bgColor: "var(--bgColor)",
+              black1: "var(--black1)",
+              black2: "var(--black2)",
+              tiyaGreen: "var(--tiyaGreen)",
+            },
+          },
         },
       };
     </script>
   </head>
   <body>
+    <!-- Navbar -->
     <div class="container">
-      <h1 class="bg-red-600 text-white">Hello</h1>
+      <div class="py-[40px] flex items-center justify-between px-4 xl:px-0">
+        <!-- Left part Logo -->
+        <div>
+          <img src="/assets/logo.png" alt="{logo}" />
+        </div>
+        <!-- Middle part List -->
+        <div>
+          <ul class="hidden md:flex items-center gap-x-[40px]">
+            <li>
+              <a
+                href="#"
+                class="font-Manrope text-black1 text-base font-normal hover:font-bold transition-all"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-Manrope text-black1 text-base font-normal hover:font-bold transition-all"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-Manrope text-black1 text-base font-normal hover:font-bold transition-all"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-Manrope text-black1 text-base font-normal hover:font-bold transition-all"
+                >Blogs</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-Manrope text-black1 text-base font-normal hover:font-bold transition-all"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Right part Button-->
+        <div class="items-center gap-x-[15px] md:flex hidden">
+          <!-- Search -->
+          <div
+            class="w-[48px] h-[48px] rounded-full bg-white flex items-center justify-center text-black1 text-xl border-2 hover:bg-tiyaGreen transition-all hover:text-white border-[#bdbdbd]"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <!-- Shoping cart -->
+          <div
+            class="w-[48px] h-[48px] rounded-full bg-white flex items-center justify-center text-black1 text-xl border-2 hover:bg-tiyaGreen transition-all hover:text-white border-[#bdbdbd]"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <!-- Book button -->
+          <div
+            class="group text-xl font-Manrope font-extrabold text-black1 bg-tiyaGreen py-[14px] px-5 rounded-[32px] flex items-center gap-x-2 hover:bg-[#a0df59] transition-all cursor-pointer"
+          >
+            Book Consult
+            <div
+              class="w-[32px] h-[32px] bg-black1 text-white rounded-[32px] flex items-center justify-center rotate-[310deg] group-hover:rotate-[360deg] transition-transform"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+          </div>
+          <!-- Menu bar -->
+        </div>
+        <div
+          class="md:hidden block text-black1 border-2 border-[#dadada] rounded-full w-[48px] h-[48px] flex items-center justify-center text-2xl hover:bg-tiyaGreen hover:text-black2"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
     </div>
   </body>
 </html>
